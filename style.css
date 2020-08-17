@@ -1,0 +1,160 @@
+body{
+    background-color: #13141b;
+    color: #ffffff;
+    background-image: url(images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+.form-control{
+    background-color:rgba(255, 255, 255, 0.2);
+    padding: 22px;
+    border: none;
+    border-radius: 25px;
+}
+.btn{
+    border-radius: 1.5rem;
+    padding: 9px 20px;
+}
+
+.btn-privious{
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+.navbar-toggler {
+    border: none;
+}
+.search-box{
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.single-result{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+#result0,#result1,#result2,#result3,#result4,#result4{
+    color: brown;
+}
+a{
+    color: coral;
+}
+li{
+    list-style-type: none;
+}
+span{
+    position: relative;
+    top: 20%;
+    right: 8%;
+}
+.artist-img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+span{
+    position: relative;
+    top: 20%;
+    right: 11%;
+}
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    span{
+        position: relative;
+        top: 20%;
+        right: 15%;
+    }
+
+
+
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (min-width: 375px) and (max-width:425px){
+    span{
+        position: relative;
+        top: 20%;
+        right: 34%;
+    }
+    .artist-name, .song-title{
+        font-size:   15px; ;
+        }
+    }
+
+
+
+   @media only screen and (width: 320px){
+    span{
+        position: relative;
+        top: 20%;
+        right: 83%;
+    }
+    .artist-name, .song-title{
+        font-size:   10px;
+        }  
+       }
+/* .single-lyrics{
+    width: auto;
+}
+.artist-name, .song-title{
+font-size:   10px; ;
+}
+span{
+    right: 35%; 
+} */
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+    }

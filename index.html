@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hard Rock Solution - Song Lyric App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar  navbar-dark my-3">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Hard Rock Solution">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/toggler-icon.svg" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content-area">
+            <div class="search-bar col-md-6 mx-auto">
+                <h1 class="text-center">Lyrics Search</h1>
+                <div class="search-box my-5">
+                    <input id="input" type="text" class="form-control" placeholder="Enter your artist song name">
+                    <button id="button" class="btn btn-success search-btn">Search</button>
+                </div>
+            </div>
+            
+          
+            <div class="single-lyrics  container text-center">
+                <pre id="lyrics" class="lyric  text-white">
+                </pre>
+            </div>
+         
+
+        </main>
+    </div>
+
+
+<script>
+
+
+
+// <!--
+// const input = document.getElementById('input');
+// const search = document.getElementById('button');
+// const result0 = document.getElementById('result0');
+// const result1 = document.getElementById('result1');
+// const result2 = document.getElementById('result2');
+// const result3 = document.getElementById('result3');
+// const result4 = document.getElementById('result4')
+// search.addEventListener('click',function(){
+    
+
+
+// const apiURL = 'https://api.lyrics.ovh';
+
+
+    
+//     searchValue = input.value.trim();
+
+//     if(!searchValue){
+//         alert('Nothing')
+//     }
+//     else{
+//         searchSong(searchValue)
+       
+//     }
+// })
+// async function searchSong(searchValue){
+//     const searchResult = await fetch('https://api.lyrics.ovh/suggest/'+searchValue+'')
+//     const data = await searchResult.json();
+//   console.log(data.data);
+  
+//     for(let i = 0; i <= 4; i++ ){
+//         this["result"+i].innerHTML = `<div class = "jumbotron">  <h3>Artist: ${data.data[i].artist.name}</h3>`+" </br>Album: " +(data.data[i].album.title)+"</br> "+`<button class="btn btn-primary mt-4 "><a href="http://api.deezer.com/artist/5644/image">Get Lyrics</a></button></div>`
+//     }
+   
+// }
+// {
+//     const artist = "Taylor Swift";
+//    const title = "Delicate";
+//   fetch('https://api.lyrics.ovh/v1/'+artist+'/'+title+'')
+//   .then(res => res.json())
+//   .then(data => document.getElementById('lyrics').innerText = (data.lyrics) )
+   
+// }-->
+ 
+
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
